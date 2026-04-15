@@ -54,4 +54,8 @@
 
   --font-display: 'FiraCode', 'sans-serif';
   --font-mono: 'Fira Code', 'monospace';
+
+  /* Spacing */
+
+  --spacing-container: 800px;
 }
