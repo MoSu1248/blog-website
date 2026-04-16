@@ -14,10 +14,10 @@
   }
 
   h1 {
-    @apply text-[32px] mb-6;
+    @apply text-[32px];
   }
   h2 {
-    @apply text-[32px] mb-6;
+    @apply text-[32px];
   }
 
   p {
