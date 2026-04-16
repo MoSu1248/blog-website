@@ -17,4 +17,7 @@
 .btn-lift:active {
   transform: translateY(0);
 }
- 
+
+.section-container {
+  @apply border-neutral-700 pb-10;
+}
