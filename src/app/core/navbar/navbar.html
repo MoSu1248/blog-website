@@ -1,8 +1,26 @@
-<nav>
-  <ul>
-    <li><a href="">Home</a></li>
-    <li><a href="blog">Blog</a></li>
-    <li><a href="about">About</a></li>
-    <li><a href="news letter">New Letter</a></li>
+<nav class="border border-neutral-700 rounded-xl flex justify-between items-center px-4 py-2">
+  <img
+    ngSrc="images/image-avatar.jpg"
+    width="50"
+    height="50"
+    priority
+    alt="User Avatar"
+    class="border border-neutral-700 rounded-lg object-cover"
+  />
+  <ul class="flex gap-5">
+    <li>
+      <a
+        class="nav-link"
+        routerLink=""
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </li>
+    <li><a class="nav-link" routerLink="blog" routerLinkActive="active-link">Blog</a></li>
+    <li><a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a></li>
+    <li>
+      <a class="nav-link" routerLink="news letter" routerLinkActive="active-link">New Letter</a>
+    </li>
   </ul>
 </nav>

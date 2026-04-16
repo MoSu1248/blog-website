@@ -1,0 +1,20 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-x-icon',
+  imports: [],
+  template: `<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    fill="none"
+    viewBox="0 0 18 16"
+  >
+    <path
+      fill="currentColor"
+      d="m.399 0 6.6 8.825L.357 16h1.495l5.815-6.282L12.365 16h5.087l-6.971-9.321L16.663 0h-1.495L9.813 5.785 5.486 0H.399Zm2.198 1.101h2.337L15.254 14.9h-2.337L2.597 1.1Z"
+    />
+  </svg> `,
+  styles: ``,
+})
+export class XIcon {}

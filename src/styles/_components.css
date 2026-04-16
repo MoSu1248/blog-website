@@ -1,0 +1,20 @@
+.active-link {
+  @apply underline decoration-blue-500 decoration-2 underline-offset-4;
+}
+
+.nav-link {
+  @apply p-2 rounded-lg transition-all hover:text-blue-400 duration-300 ease-out;
+}
+
+.active-link:hover {
+  @apply hover:text-neutral-400;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+}
+
+.btn-lift:active {
+  transform: translateY(0);
+}
+ 
