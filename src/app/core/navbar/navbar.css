@@ -1,0 +1,7 @@
+ul {
+  @apply list-none p-0 m-0; /* Removes bullets, default padding, and margins */
+}
+
+li {
+  @apply flex items-center justify-center; /* Makes the LI itself a flex box */
+}
