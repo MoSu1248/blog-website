@@ -1,4 +1,4 @@
-<nav class="border border-neutral-700 rounded-xl flex justify-between items-center px-4 py-2">
+<nav class="border border-neutral-700 rounded-xl flex items-center px-4 py-2 gap-5">
   <img
     ngSrc="images/image-avatar.jpg"
     width="50"
@@ -7,7 +7,7 @@
     alt="User Avatar"
     class="border border-neutral-700 rounded-lg object-cover"
   />
-  <ul class="flex gap-5">
+  <ul class="flex gap-5 ml-auto">
     <li>
       <a
         class="nav-link"
@@ -23,4 +23,5 @@
       <a class="nav-link" routerLink="news letter" routerLinkActive="active-link">New Letter</a>
     </li>
   </ul>
+  <app-themebtn></app-themebtn>
 </nav>
