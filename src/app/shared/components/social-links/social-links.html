@@ -10,7 +10,7 @@
           'rounded-[10px] border border-neutral-700 p-2': variant === 'outline',
           'p-1': variant === 'default',
         }"
-        [attr.aria-label]="'Follow me on ' + link.name"
+        [attr.aria-label]="link.ariaLabel"
       >
         <ng-container *ngComponentOutlet="iconMap[link.icon]" />
       </a>

@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { XIcon } from '../../shared/icons/x-icon/x-icon';
-import { GithubIcon } from '../../shared/icons/github-icon/github-icon';
-import { LinkedinIcon } from '../../shared/icons/linkedin-icon/linkedin-icon';
-import { FrontendMentorIcon } from '../../shared/icons/frontend-mentor-icon/frontend-mentor-icon';
 import { SocialLinks } from '../../shared/components/social-links/social-links';
+import { BlogComponents } from '../../shared/components/blog-components/blog-components';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [SocialLinks],
+  imports: [SocialLinks, BlogComponents, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

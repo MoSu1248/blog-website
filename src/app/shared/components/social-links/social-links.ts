@@ -24,9 +24,29 @@ export class SocialLinks {
   readonly iconMap = this.ICON_MAP;
 
   links: SocialLink[] = [
-    { name: 'GitHub', url: 'https://github.com/suhail', icon: 'github' },
-    { name: 'X', url: 'https://x.com/suhail', icon: 'x' },
-    { name: 'linkedIn', url: 'https://x.com/suhail', icon: 'linkedin' },
-    { name: 'frontend-mentor', url: 'https://x.com/suhail', icon: 'frontend-mentor' },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/suhail',
+      icon: 'github',
+      ariaLabel: 'Visit my GitHub profile',
+    },
+    {
+      name: 'X',
+      url: 'https://x.com/suhail',
+      icon: 'x',
+      ariaLabel: 'Visit my X profile',
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://linkedin.com/in/suhail',
+      icon: 'linkedin',
+      ariaLabel: 'Visit my LinkedIn profile',
+    },
+    {
+      name: 'frontend-mentor',
+      url: 'https://x.com/suhail',
+      icon: 'frontend-mentor',
+      ariaLabel: 'Visit my Frontend mentor profile',
+    },
   ];
 }
