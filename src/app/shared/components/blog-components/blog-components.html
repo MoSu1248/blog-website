@@ -1,0 +1,49 @@
+@if (viewMode === 'all') {
+  @if (blogs$ | async; as blogs) {
+    <ul class="flex flex-col">
+      @for (blog of blogs; track blog.slug) {
+        <li class="flex flex-col gap-2 py-6 border-b border-neutral-700 last:border-0">
+          <a
+            [routerLink]="['/blog', blog.slug]"
+            class="w-full font-semibold text-xl tracking-tighter text-neutral-0 transition-all hover:text-blue-400"
+          >
+            {{ blog.title }}
+          </a>
+
+          <p>{{ blog.description }}</p>
+
+          <span class="w-full text-base italic tracking-[-0.2px]">
+            {{ blog.publishedAt | date: 'mediumDate' }}
+          </span>
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>Loading blogs...</p>
+  }
+}
+
+@if (viewMode === 'latest') {
+  @if (latestBlogs$ | async; as blogs) {
+    <ul class="flex flex-col">
+      @for (blog of blogs; track blog.slug) {
+        <li class="flex flex-col gap-2 py-6 border-b border-neutral-700 last:border-0">
+          <a
+            [routerLink]="['/blog', blog.slug]"
+            class="w-full font-semibold text-xl tracking-tighter text-neutral-0 transition-all hover:text-blue-400"
+          >
+            {{ blog.title }}
+          </a>
+
+          <p>{{ blog.description }}</p>
+
+          <span class="w-full text-base italic tracking-[-0.2px]">
+            {{ blog.publishedAt | date: 'mediumDate' }}
+          </span>
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>Loading latest blogs...</p>
+  }
+}
