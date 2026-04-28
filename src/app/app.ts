@@ -11,4 +11,15 @@ import { Footer } from './core/footer/footer';
 })
 export class App {
   protected readonly title = signal('blog-website');
+
+  ngOnInit() {
+    const saved = localStorage.getItem('theme');
+
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    }
+  }
 }

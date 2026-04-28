@@ -7,4 +7,13 @@ import { SunIcon } from '../../icons/sun-icon/sun-icon';
   templateUrl: './themebtn.html',
   styleUrl: './themebtn.css',
 })
-export class Themebtn {}
+export class Themebtn {
+  toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+
+    const next = current === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  }
+}
