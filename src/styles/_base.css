@@ -1,9 +1,7 @@
 @layer base {
   html,
   body {
-    font-family: var(--font-sans);
-    @apply antialiased bg-bg text-text;
-    overflow-x: hidden;
+    @apply antialiased bg-bg text-text overflow-x-hidden font-display transition-all ease-out;
   }
 
   h1,
@@ -26,7 +24,7 @@
   }
 
   a {
-    @apply transition-all text-primary hover:opacity-80;
+    @apply transition-all text-text-h hover:opacity-80;
   }
 
   a:focus-visible {
@@ -38,4 +36,24 @@
   .snippet-text {
     font-family: var(--font-mono);
   }
+
+  pre {
+    @apply bg-neutral-900 text-neutral-100 p-4 rounded-xl border border-neutral-700 shadow-md overflow-x-auto;
+  }
+
+  code {
+    @apply font-mono text-sm;
+  }
+}
+
+.hljs-tag {
+  @apply text-blue-400;
+}
+
+.hljs-name {
+  @apply text-blue-300;
+}
+
+.hljs-attr {
+  @apply text-green-400;
 }
