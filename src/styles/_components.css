@@ -14,7 +14,6 @@
   transform: translateY(0px);
 }
 
-
 /* fix */
 
 .btn-hover {
@@ -22,8 +21,7 @@
 }
 
 .btn-hover:hover {
-  color: var(--color-blue-400);
-  transform: translateY(-2px);
+  @apply text-blue-400 translate-y-[-2px];
 }
 
 .btn-hover:active {
@@ -33,3 +31,5 @@
 .section-container {
   @apply border-neutral-700 pb-8;
 }
+
+

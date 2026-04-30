@@ -1,1 +1,8 @@
-<p>blog-page works!</p>
+@if (blog$ | async; as blog) {
+  <article>
+    <h1>{{ blog.title }}</h1>
+    <div class="prose prose-neutral dark:prose-invert max-w-none">
+      <markdown [data]="blog.content"></markdown>
+    </div>
+  </article>
+}
