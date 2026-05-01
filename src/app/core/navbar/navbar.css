@@ -1,5 +1,5 @@
-@reference "../../app.css";
-
-li {
-  @apply flex items-center justify-center; /* Makes the LI itself a flex box */
+@media (max-width: 600px) {
+  nav{
+    display: none;
+  }
 }

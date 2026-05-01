@@ -8,4 +8,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './mobile-menu.html',
   styleUrl: './mobile-menu.css',
 })
-export class MobileMenu {}
+export class MobileMenu {
+  isOpen = false;
+
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
+  }
+}
