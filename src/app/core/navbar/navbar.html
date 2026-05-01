@@ -1,4 +1,4 @@
-<nav class="border border-neutral-700 rounded-xl flex items-center px-4 py-2 gap-5">
+<div class="border border-neutral-700 rounded-xl flex items-center justify-between px-4 py-2 gap-5">
   <img
     ngSrc="images/image-avatar.jpg"
     width="50"
@@ -7,21 +7,26 @@
     alt="User Avatar"
     class="border border-neutral-700 rounded-lg object-cover"
   />
-  <ul class="flex gap-5 ml-auto">
-    <li>
-      <a
-        class="nav-link"
-        routerLink=""
-        routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >Home</a
-      >
-    </li>
-    <li><a class="nav-link" routerLink="blog" routerLinkActive="active-link">Blog</a></li>
-    <li><a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a></li>
-    <li>
-      <a class="nav-link" routerLink="news letter" routerLinkActive="active-link">New Letter</a>
-    </li>
-  </ul>
-  <app-themebtn></app-themebtn>
-</nav>
+  <nav class="flex items-center px-4 py-2 gap-5">
+    <ul class="flex gap-5 ml-auto">
+      <li>
+        <a
+          class="nav-link"
+          routerLink=""
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li><a class="nav-link" routerLink="blog" routerLinkActive="active-link">Blog</a></li>
+      <li><a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a></li>
+      <li>
+        <a class="nav-link" routerLink="news letter" routerLinkActive="active-link">New Letter</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="flex gap gap-5">
+    <app-mobile-menu></app-mobile-menu>
+    <app-themebtn></app-themebtn>
+  </div>
+</div>
